@@ -12,13 +12,14 @@ int main()
 //other--->其他字符个数 
 	word=space=number=other=0;
 	printf("请输入一行字符:");
-//	c=getchar();
-	while((c=getchar())!='\n'){
+	c=getchar();
+//while((c=getchar())!='\n') -->也可以直接使用这种 
+	while(c!='\n'){
 		if((c>='a'&&c<='z')||(c>='A'&&c<='Z')) word++;
 		else if(c==' ') space++; 
 		else if(c>='0'&&c<='9') number++;
 		else other++;
-//		c=getchar();
+		c=getchar();
 	}
 	printf("其中这行字的英文字母是%d个，空格是%d个，数字是%d个，其他字符是%d个\n",word,space,number,other);
 	return 0;
