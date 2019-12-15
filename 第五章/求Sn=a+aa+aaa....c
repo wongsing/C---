@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 //求数列sn
-//两种方法，第二种目前调用函数失败
+//两种方法
 int count(int a);
 int main()
 {
@@ -15,9 +15,9 @@ int main()
 		sum=(2*i)+sum;
 		amount=amount+sum;
 	}
-
+	amount2=count(n);
 	printf("结果是%d。\n",amount);
-	printf("调用函数的结果是%d\n",count(n));
+	printf("调用函数的结果是%d\n",amount2);
 	return 0;
 }
 
@@ -29,7 +29,8 @@ int count(int a)
 	while(i<=a){
 		amount1=amount1+sum1;
 		sum1=sum1+2*pow(10,i);
+		i++; 
 
 	}
-	return 0;
+	return amount1;
 }
