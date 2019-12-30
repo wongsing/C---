@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main()
+int main()  
 { static int m,n,k,b[15][15];  
 b[0][1]=1;  
 for(m=1;m<15;m++)  
@@ -8,3 +8,4 @@ for(m=1;m<15;m++)
 printf("%-5d",b[m][n]);}printf("\n");  
 }  
 }  
+ 
