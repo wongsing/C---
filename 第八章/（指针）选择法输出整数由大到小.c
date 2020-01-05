@@ -35,7 +35,7 @@ void sort1(int *x , int n){
 	for(i=0;i<n-1;i++){
 		k=i;
 		for(j=i+1;j<n;j++){
-			if(*(x+j)>*(x+k)) k= j ;   //*(x+j)--->x[j]
+			if(*(x+j)>*(x+k)) k= j ;   //*(x+j)--->x[j]9ik
 			if(k!=j){
 				t = *(x+i);
 				*(x+i)=*(x+k);
