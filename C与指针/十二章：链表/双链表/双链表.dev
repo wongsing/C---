@@ -1,6 +1,6 @@
 [Project]
-FileName=单链表.dev
-Name=单链表
+FileName=双链表.dev
+Name=双链表
 Type=1
 Ver=2
 ObjFiles=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=3
 CompilerSettings=0000000100000000001000000
-UnitCount=5
+UnitCount=2
 
 [VersionInfo]
 Major=1
@@ -61,37 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=sll_node.h
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit3]
-FileName=insert1(解决不了头尾).c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit4]
-FileName=insert2.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit5]
-FileName=insert3.c
+FileName=double_linked_list_node.h
 CompileCpp=0
 Folder=
 Compile=1

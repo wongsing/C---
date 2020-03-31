@@ -1,15 +1,15 @@
-# Project: 单链表
+# Project: 双链表
 # Makefile created by Dev-C++ 5.6.3
 
 CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = main.o insert1(解决不了头尾).o insert2.o insert3.o
-LINKOBJ  = main.o insert1(解决不了头尾).o insert2.o insert3.o
+OBJ      = main.o
+LINKOBJ  = main.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib32" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32 -g3
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
-BIN      = 单链表.exe
+BIN      = 双链表.exe
 CXXFLAGS = $(CXXINCS) -m32 -g3
 CFLAGS   = $(INCS) -m32 -g3
 RM       = rm.exe -f
@@ -26,12 +26,3 @@ $(BIN): $(OBJ)
 
 main.o: main.c
 	$(CC) -c main.c -o main.o $(CFLAGS)
-
-insert1(解决不了头尾).o: insert1(解决不了头尾).c
-	$(CC) -c insert1(解决不了头尾).c -o insert1(解决不了头尾).o $(CFLAGS)
-
-insert2.o: insert2.c
-	$(CC) -c insert2.c -o insert2.o $(CFLAGS)
-
-insert3.o: insert3.c
-	$(CC) -c insert3.c -o insert3.o $(CFLAGS)

@@ -37,8 +37,7 @@ node *creat(void)
 		scanf("%ld,%f",&p1->num,&p1->score);
 	}	
 		p2->next = NULL;
-		return head;
-	
+		return head;	
 }
 
 void print(node *head)
