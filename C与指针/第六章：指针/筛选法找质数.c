@@ -1,11 +1,12 @@
 /*
-** Sieve of Eratosthenes –– compute prime numbers using an array.
+** 筛选法选质数，除2以外的所有偶数都不是质数，所以数组元素只对应奇数 
 */
 #include <stdio.h>
 #include <stdlib.h>
 #define SIZE 10
 #define TRUE 1
 #define FALSE 0
+
 int
 main()
 {
